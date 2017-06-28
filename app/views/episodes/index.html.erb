@@ -3,6 +3,6 @@
 <ul>
   <% @episodes.each do |episode| %>
     <li><%= link_to episode.title, user_episode_path(@user, episode) %></li>
-    <p><%= link_to "Add a Review", new_user_episode_review_path(@user, episode, @review) %></p>
+    <p><%= link_to "Add a Review", new_user_episode_reviews_path(@user, episode, @review) %></p>
   <% end %>
 </ul>
