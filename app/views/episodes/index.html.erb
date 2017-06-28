@@ -1,0 +1,7 @@
+<h1>Office Episodes</h1>
+
+<ul>
+  <% @episodes.each do |episode| %>
+    <li><%= link_to episode.title, user_episode_path(@user, episode) %></li>
+  <% end %>
+</ul>
