@@ -7,3 +7,11 @@
 </ul>
 
 <p><%= link_to "Make New User", new_user_path %></p>
+
+<hr>
+
+<ul>
+  <% @topTen.each do |top| %>
+  <li><%= top.name %></li>
+  <% end %>
+</ul>
